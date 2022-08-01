@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WACC Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="weightedAverageCostOfCapitalRadio" name="variables" checked>
+  <label for="weightedAverageCostOfCapitalRadio">Weighted Average Cost Of Capital</label>
+
+  <input type="radio" id="marketValueofCompanysEquityRadio" name="variables" disabled>
+  <label for="marketValueofCompanysEquityRadio">Market Value of Company's Equity</label>
+
+  <input type="radio" id="costofEquityRadio" name="variables" disabled>
+  <label for="costofEquityRadio">Cost of Equity</label>
+
+  <input type="radio" id="marketValueofFirmsDebtRadio" name="variables" disabled>
+  <label for="marketValueofFirmsDebtRadio">Market Value of Firm's Debt</label>
+
+  <input type="radio" id="costofDebtRadio" name="variables" disabled>
+  <label for="costofDebtRadio">Cost of Debt</label>
+
+  <input type="radio" id="corporateTaxRateRadio" name="variables" disabled>
+  <label for="corporateTaxRateRadio">Corporate Tax Rate</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">Market Value of Company's Equity (E)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Cost of Equity (Re)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Market Value of Firm's Debt (D)</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">Cost of Debt (Rd)</label>
+  <input type="number" id="v4"><br><br>
+  
+  <label for="v5" id="variable5">Corporate Tax Rate (Tc)</label>
+  <input type="number" id="v5"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
